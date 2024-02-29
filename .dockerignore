@@ -1,0 +1,14 @@
+\*\*/.env
+
+**/node_modules
+**/Dockerfile
+**/\*.md
+**/.git
+**/.yml
+**/.eslintrc
+.github
+.husky
+.idea
+.cache
+build
+dist

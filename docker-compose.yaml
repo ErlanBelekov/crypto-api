@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  server:
+    image: exchange-service:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: runner
+    environment:
+      PORT: 3000
+      UPDATE_FREQUENCE_MS: 10000
+      SERVICE_FEE: 0.01
+    expose:
+      - 3000
+    ports:
+      - '3000:3000'
